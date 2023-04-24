@@ -26,6 +26,6 @@ func TestVersionRoute(t *testing.T) {
 	var version hope.Version
 	json.NewDecoder(w.Body).Decode(&version)
 	if version.Version != "0.0.1" {
-		t.Fatalf("Return code: %s expect: 200", version.Version)
+		t.Fatalf("Return code: %s expect: 0.0.1", version.Version)
 	}
 }
