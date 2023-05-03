@@ -1,4 +1,4 @@
-FROM golang:1.20.3
-COPY . .
+FROM alpine:3.17
+COPY api .
 EXPOSE 3000/tcp
-ENTRYPOINT [ "go","run","main.go" ]
+ENTRYPOINT [ "./","api"]
