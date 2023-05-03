@@ -37,7 +37,7 @@ spec:
         stage('Test'){
             steps{
                 container('golang'){
-                sh 'git clone https://github.com/web2543/go-ci.git .'
+                //sh 'git clone https://github.com/web2543/go-ci.git .'
                 sh 'go test -v'
                 }
             }
