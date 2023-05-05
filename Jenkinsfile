@@ -8,7 +8,7 @@ kind: Pod
 spec:
   containers:
   - name: golang
-    image: golang:1.20.3
+    image: golang:1.20.3-alpine
     command:
     - sleep
     args:
