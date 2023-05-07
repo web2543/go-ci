@@ -8,7 +8,8 @@ import (
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/version",
+	group := r.Group("/go")
+	group.GET("/version",
 		hope.Getversion)
 	return r
 

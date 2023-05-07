@@ -14,7 +14,7 @@ func TestVersionRoute(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 	router := setupRouter()
 	w := httptest.NewRecorder()
-	req, err := http.NewRequest("GET", "/version", nil)
+	req, err := http.NewRequest("GET", "/go/version", nil)
 	if err != nil {
 		t.Fatalf("Err:%v", err)
 	}
